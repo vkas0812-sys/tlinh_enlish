@@ -60,6 +60,8 @@ A single `index.html` file (HTML + CSS + JavaScript) – no install, runs in any
 ```text
 .
 ├── index.html                 # App (HTML + CSS + JS)
+├── favicon.svg                # Biểu tượng · Icon
+├── LICENSE                    # CC BY-NC 4.0
 ├── docs/screenshot.png        # Ảnh minh hoạ · Screenshot
 ├── .github/workflows/         # Tự đăng lên GitHub Pages · Auto-deploy
 └── README.md
@@ -69,8 +71,8 @@ A single `index.html` file (HTML + CSS + JavaScript) – no install, runs in any
 
 ## 📄 Bản quyền · License
 
-🇻🇳 Dùng cho mục đích học tập và cá nhân. Liên hệ tác giả trước khi dùng cho mục đích thương mại.
-🇬🇧 For learning and personal use. Please contact the author before any commercial use.
+🇻🇳 Phát hành theo giấy phép [CC BY-NC 4.0](LICENSE): được dùng và chỉnh sửa, ghi nguồn, không dùng thương mại.
+🇬🇧 Released under [CC BY-NC 4.0](LICENSE): free to use and adapt with credit, no commercial use.
 
 <div align="center">
 
