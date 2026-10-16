@@ -1,0 +1,43 @@
+/* Mobile layout (screens up to 820px). Desktop and print are unchanged. */
+.mobile-toggle { display: none; }
+
+@media screen and (max-width: 820px) {
+  header.app-header { height: 56px; padding: 0 12px; }
+  .brand-icon { width: 32px; height: 32px; font-size: 17px; }
+  .brand-title { font-size: 18px; white-space: nowrap; }
+  .brand-badge { display: none; }
+
+  /* Print button floats at the bottom for easy thumb reach */
+  #btn-print {
+    position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
+    transform: translateX(-50%); z-index: 1100;
+    padding: 12px 22px; border-radius: 999px; font-size: 15px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.35);
+  }
+
+  main.workspace { flex-direction: column; height: auto; overflow: visible; }
+
+  .mobile-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; padding: 12px 16px; border: 0; border-bottom: 1.5px solid #CBD5E1;
+    background: #FFF7ED; color: #9A3412; font-family: "Fredoka", sans-serif;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    position: sticky; top: 56px; z-index: 900;
+  }
+  .mobile-toggle .chev { transition: transform 0.2s; }
+  body.controls-open .mobile-toggle .chev { transform: rotate(180deg); }
+
+  aside.controls-panel {
+    width: 100%; border-right: 0; border-bottom: 1.5px solid #CBD5E1;
+    padding: 14px 16px; display: none; overflow: visible;
+  }
+  body.controls-open aside.controls-panel { display: flex; }
+
+  /* Bigger touch targets */
+  select, input[type="text"], textarea { font-size: 16px !important; min-height: 42px; }
+
+  section.preview-panel {
+    padding: 12px 0 90px; gap: 14px; overflow: visible; align-items: center;
+  }
+  section.preview-panel > * { zoom: var(--fit, 1); }
+}
