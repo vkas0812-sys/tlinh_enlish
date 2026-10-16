@@ -1,88 +1,79 @@
-# Tlinh English
+<div align="center">
 
-Ứng dụng hỗ trợ học tiếng Anh theo cách đơn giản, dễ sử dụng và phù hợp cho việc tự học mỗi ngày.
+# ✏️ Ms Linh English 🌈
 
-## 📚 Giới thiệu
+### Vở tập viết tiếng Anh cho bé · English handwriting workbook for kids
 
-**Tlinh English** là một dự án học tiếng Anh được xây dựng nhằm giúp người học:
+**Global Success · Primary School**
 
-- Mở rộng vốn từ vựng.
-- Luyện tập các mẫu câu tiếng Anh thông dụng.
-- Cải thiện khả năng ghi nhớ và sử dụng tiếng Anh hằng ngày.
-- Học tập thuận tiện trên máy tính và thiết bị di động.
+[![Live Demo](https://img.shields.io/badge/🚀_Mở_app_·_Open_app-FF7A3D?style=for-the-badge)](https://vkas0812-sys.github.io/tlinh_enlish/)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?style=for-the-badge&logo=github&logoColor=white)
 
-## ✨ Tính năng
+<img src="docs/screenshot.png" alt="Ms Linh English – Trace and Write" width="85%">
 
-- Giao diện đơn giản, dễ sử dụng.
-- Nội dung học tập được tổ chức rõ ràng.
-- Hỗ trợ tra cứu và ôn tập từ vựng.
-- Có thể mở rộng thêm bài học, chủ đề và chức năng luyện tập.
+</div>
 
-## 🚀 Sử dụng
+---
 
-Bạn có thể truy cập phiên bản trực tuyến của dự án tại:
+## 🌟 Giới thiệu · About
 
-> [Tlinh English](https://vkas0812-sys.github.io/tlinh_enlish/)
+🇻🇳 **Ms Linh English** là công cụ tạo **vở tập viết tiếng Anh in ra giấy** cho bé tiểu học, bám theo chương trình **Global Success**. Bé vừa tô chữ, vừa học từ vựng qua hình ảnh dễ thương.
 
-Hoặc tải mã nguồn về máy:
+🇬🇧 **Ms Linh English** creates **printable English handwriting worksheets** for primary pupils, following the **Global Success** curriculum. Kids trace letters and learn vocabulary with cute pictures.
 
-```bash
-git clone https://github.com/vkas0812-sys/tlinh_enlish.git
-cd tlinh_enlish
-```
+---
 
-Sau đó mở tệp `index.html` bằng trình duyệt nếu dự án sử dụng HTML/CSS/JavaScript thuần.
+## 🎨 Tính năng · Features
 
-## 🛠️ Công nghệ sử dụng
+| | 🇻🇳 Tiếng Việt | 🇬🇧 English |
+|---|---|---|
+| 📖 | **Vở 10 trang** theo chủ đề: Animals, Numbers 1–20, Colours, Toys & Things, Clothes & Home | **10-page workbook** by topic: Animals, Numbers 1–20, Colours, Toys & Things, Clothes & Home |
+| 📝 | **Viết câu** – luyện viết câu hoàn chỉnh | **Sentences** – practise full sentences |
+| 🔤 | **Bảng chữ cái** A–Z | **Alphabet** sheets A–Z |
+| ✏️ | **Soạn thảo tự do** – tự nhập từ muốn tập | **Free editor** – type any words to practise |
+| 🖋️ | 4 phông chữ: nét đứt, chấm bi, nét liền, nét gạch | 4 fonts: dashed, dotted, solid, trace |
+| 📏 | Dòng kẻ 4 dòng chuẩn hoặc 2 dòng tối giản, chỉnh cỡ chữ | 4-line or 2-line guides, adjustable size |
+| 🌈 | 4 theme màu: Primary, Vở Ô Ly, Slate, Pastel Candy | 4 colour themes: Primary, Ô Ly, Slate, Pastel Candy |
+| ➡️ | Mũi tên hướng dẫn nét viết | Stroke-direction arrows |
+| 👧🧒 | Nhân vật bé trai, bé gái, vườn hoa trang trí | Boy & girl characters, flower decorations |
+| 🖨️ | **In / Xuất PDF khổ A4** | **Print / Export A4 PDF** |
 
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+---
 
-## 📁 Cấu trúc dự án
+## 🚀 Cách dùng · How to use
+
+1. 🌐 **Mở app** · Open the app → [vkas0812-sys.github.io/tlinh_enlish](https://vkas0812-sys.github.io/tlinh_enlish/)
+2. 📂 **Chọn chế độ và trang** · Pick a mode and a page
+3. 🎛️ **Chỉnh phông, dòng kẻ, màu** · Adjust font, lines and colours
+4. 🖨️ **Bấm "In / Xuất PDF (A4)"** · Click "Print / Export PDF (A4)"
+
+> 💡 **Mẹo · Tip:** chọn *"Toàn bộ 10 trang"* để in trọn bộ một lần · choose *"All 10 pages"* to print the whole set at once.
+
+---
+
+## 🛠️ Công nghệ · Built with
+
+Một file `index.html` duy nhất (HTML + CSS + JavaScript), không cần cài đặt, chạy trên mọi trình duyệt.
+A single `index.html` file (HTML + CSS + JavaScript) – no install, runs in any browser.
 
 ```text
 .
-├── index.html       # Trang chính
-├── style.css        # Giao diện và kiểu dáng
-├── script.js        # Chức năng tương tác
-└── README.md        # Tài liệu dự án
+├── index.html                 # App (HTML + CSS + JS)
+├── docs/screenshot.png        # Ảnh minh hoạ · Screenshot
+├── .github/workflows/         # Tự đăng lên GitHub Pages · Auto-deploy
+└── README.md
 ```
 
-*Cấu trúc trên có thể thay đổi tùy theo quá trình phát triển dự án.*
+---
 
-## 🤝 Đóng góp
+## 📄 Bản quyền · License
 
-Mọi đóng góp đều được hoan nghênh. Bạn có thể:
+🇻🇳 Dùng cho mục đích học tập và cá nhân. Liên hệ tác giả trước khi dùng cho mục đích thương mại.
+🇬🇧 For learning and personal use. Please contact the author before any commercial use.
 
-1. Fork repository.
-2. Tạo một branch mới:
+<div align="center">
 
-   ```bash
-   git checkout -b feature/tinh-nang-moi
-   ```
+Made with 💛 by [@vkas0812-sys](https://github.com/vkas0812-sys) · ⭐ *Học vui mỗi ngày · Happy learning every day!* ⭐
 
-3. Thực hiện thay đổi và commit:
-
-   ```bash
-   git add .
-   git commit -m "Thêm tính năng mới"
-   ```
-
-4. Push branch lên GitHub:
-
-   ```bash
-   git push origin feature/tinh-nang-moi
-   ```
-
-5. Tạo Pull Request để đề xuất thay đổi.
-
-## 📄 Giấy phép
-
-Dự án hiện được phát triển cho mục đích học tập và cá nhân. Vui lòng liên hệ với chủ repository trước khi sử dụng lại nội dung cho mục đích thương mại.
-
-## 👤 Tác giả
-
-- GitHub: [@vkas0812-sys](https://github.com/vkas0812-sys)
-- Repository: [tlinh_enlish](https://github.com/vkas0812-sys/tlinh_enlish)
+</div>
