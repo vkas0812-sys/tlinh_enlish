@@ -1,0 +1,24 @@
+/* Tracing fonts */
+@font-face {
+  font-family: "PrintDashed";
+  src: url("../fonts/PrintDashed.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PrintClearly";
+  src: url("../fonts/PrintClearly.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KgPrimaryDots";
+  src: url("../fonts/KgPrimaryDots.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TraceFont";
+  src: url("../fonts/TraceFont.ttf") format("truetype");
+  font-display: swap;
+}
