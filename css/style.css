@@ -359,6 +359,46 @@ section.preview-panel {
   color: #9A3412;
 }
 
+/* BRAND CORNER / WATERMARK */
+.brand-corner {
+  position: absolute;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Fredoka", "Quicksand", sans-serif;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 3px 10px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(253, 186, 116, 0.5);
+  backdrop-filter: blur(2px);
+}
+.brand-corner.bottom-right {
+  bottom: 4mm;
+  right: 12mm;
+}
+.brand-corner.bottom-left {
+  bottom: 4mm;
+  left: 12mm;
+}
+.brand-corner.top-right {
+  top: 8mm;
+  right: 14mm;
+}
+.brand-corner .brand-tag-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #EA580C;
+  letter-spacing: 0.3px;
+}
+.brand-corner .brand-tag-sub {
+  font-size: 10px;
+  font-weight: 600;
+  color: #64748B;
+}
+
 /* VOCABULARY CARD */
 .sec-vocab-container {
   position: relative;

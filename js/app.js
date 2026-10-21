@@ -12,11 +12,50 @@ const state = {
   fontSize: 38,
   ruling: '4line',
   theme: 'primary',
+  brandPosition: 'bottom_right',
   showArrows: true,
   showCharacters: true,
   showGarden: true,
   customText: 'The quick brown fox jumps over the lazy dog.\nBright yellow sun shines high in the blue sky.\nI love reading English storybooks every day.\nShe sells sweet apples and fresh oranges.\nThank you very much, teacher! Have a great day.'
 };
+
+// Brand Header or Corner Badge generator
+function getBrandMarkup(mainTitle = 'MS LINH ENGLISH', subTitle = 'Global Success') {
+  let headerHtml = '';
+  let cornerHtml = '';
+
+  if (state.brandPosition === 'top_center') {
+    headerHtml = `
+      <div class="brand-header">
+        <span class="brand-name">${mainTitle}</span>
+        ${subTitle ? `<span class="brand-sub">${subTitle}</span>` : ''}
+      </div>
+    `;
+  } else if (state.brandPosition === 'bottom_right') {
+    cornerHtml = `
+      <div class="brand-corner bottom-right">
+        <span class="brand-tag-name">Ms Linh English</span>
+        ${subTitle ? `<span class="brand-tag-sub">· ${subTitle}</span>` : ''}
+      </div>
+    `;
+  } else if (state.brandPosition === 'bottom_left') {
+    cornerHtml = `
+      <div class="brand-corner bottom-left">
+        <span class="brand-tag-name">Ms Linh English</span>
+        ${subTitle ? `<span class="brand-tag-sub">· ${subTitle}</span>` : ''}
+      </div>
+    `;
+  } else if (state.brandPosition === 'top_right') {
+    cornerHtml = `
+      <div class="brand-corner top-right">
+        <span class="brand-tag-name">Ms Linh English</span>
+        ${subTitle ? `<span class="brand-tag-sub">· ${subTitle}</span>` : ''}
+      </div>
+    `;
+  }
+
+  return { headerHtml, cornerHtml };
+}
 
 // Render a single HW line SVG
 function renderHwSvg(text, isTrace = true, isEmpty = false) {
@@ -106,6 +145,7 @@ function renderWorkbookSheet(pdata) {
   const boyHtml = state.showCharacters ? `<div class="char-boy">${DECOR_SVGS.boy}</div>` : '';
   const girlHtml = state.showCharacters ? `<div class="char-girl">${DECOR_SVGS.girl}</div>` : '';
   const gardenHtml = state.showGarden ? `<div class="bottom-garden-container">${DECOR_SVGS.garden}</div>` : '';
+  const { headerHtml: brandHeaderHtml, cornerHtml: brandCornerHtml } = getBrandMarkup('MS LINH ENGLISH', 'Global Success');
 
   return `
     <div class="page-sheet" data-page-id="${pdata.id}">
@@ -121,6 +161,7 @@ function renderWorkbookSheet(pdata) {
 
       ${boyHtml}
       ${girlHtml}
+      ${brandCornerHtml}
 
       <div class="top-badge-container">
         <div class="top-pill">
@@ -130,10 +171,7 @@ function renderWorkbookSheet(pdata) {
         </div>
       </div>
 
-      <div class="brand-header">
-        <span class="brand-name">MS LINH ENGLISH</span>
-        <span class="brand-sub">Global Success</span>
-      </div>
+      ${brandHeaderHtml}
 
       <div class="sec-vocab-container">
         <div class="vocab-pill">I. VOCABULARY • ${pdata.unit_title}</div>
@@ -177,6 +215,7 @@ function renderWorkbookSheet(pdata) {
 function renderSentencesSheet() {
   const lines = state.customText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   let cardsHtml = '';
+  const { cornerHtml: brandCornerHtml } = getBrandMarkup('Ms Linh English', 'Sentences');
 
   lines.forEach((lineText, idx) => {
     cardsHtml += `
@@ -195,6 +234,7 @@ function renderSentencesSheet() {
     <div class="page-sheet">
       <div class="corner-cluster corner-tl">${DECOR_SVGS.corner}</div>
       <div class="corner-cluster corner-tr">${DECOR_SVGS.corner}</div>
+      ${brandCornerHtml}
 
       <div class="top-badge-container">
         <div class="top-pill">★ MS LINH PRIMARY HANDWRITING ★</div>
@@ -227,6 +267,8 @@ function renderAlphabetSheet() {
   ];
 
   let gridHtml = '';
+  const { cornerHtml: brandCornerHtml } = getBrandMarkup('Ms Linh English', 'Alphabet');
+
   alphaPairs.forEach(([pair, word]) => {
     gridHtml += `
       <div class="alpha-item">
@@ -244,6 +286,7 @@ function renderAlphabetSheet() {
     <div class="page-sheet">
       <div class="corner-cluster corner-tl">${DECOR_SVGS.corner}</div>
       <div class="corner-cluster corner-tr">${DECOR_SVGS.corner}</div>
+      ${brandCornerHtml}
 
       <div class="top-badge-container">
         <div class="top-pill">★ ALPHABET MASTERY • A - L ★</div>
@@ -326,6 +369,11 @@ document.getElementById('select-ruling').addEventListener('change', (e) => {
 
 document.getElementById('select-theme').addEventListener('change', (e) => {
   state.theme = e.target.value;
+  render();
+});
+
+document.getElementById('select-brand-position').addEventListener('change', (e) => {
+  state.brandPosition = e.target.value;
   render();
 });
 
