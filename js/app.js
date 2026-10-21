@@ -148,7 +148,7 @@ function renderWorkbookSheet(pdata) {
   const { headerHtml: brandHeaderHtml, cornerHtml: brandCornerHtml } = getBrandMarkup('MS LINH ENGLISH', 'Global Success');
 
   return `
-    <div class="page-sheet" data-page-id="${pdata.id}">
+    <div class="page-sheet count-${items.length}" data-page-id="${pdata.id}">
       <div class="corner-cluster corner-tl">${DECOR_SVGS.corner}</div>
       <div class="corner-cluster corner-tr">${DECOR_SVGS.corner}</div>
 
