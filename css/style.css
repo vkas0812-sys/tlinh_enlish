@@ -694,6 +694,55 @@ section.preview-panel {
   color: #64748B;
 }
 
+/* COMPACT STYLES FOR 6 AND 7 ITEMS */
+.page-sheet.count-6 .trace-row {
+  height: 17mm;
+}
+.page-sheet.count-6 .hw-line {
+  height: 8mm;
+}
+.page-sheet.count-6 .animal-avatar {
+  width: 32px;
+  height: 32px;
+}
+.page-sheet.count-6 .model-word {
+  font-size: 23px;
+}
+.page-sheet.count-6 .ex-item {
+  height: 25px;
+}
+.page-sheet.count-6 .ex-avatar {
+  width: 24px;
+  height: 24px;
+}
+.page-sheet.count-6 .scramble-word {
+  font-size: 18px;
+}
+
+.page-sheet.count-7 .trace-row {
+  height: 14.8mm;
+}
+.page-sheet.count-7 .hw-line {
+  height: 7mm;
+}
+.page-sheet.count-7 .animal-avatar {
+  width: 28px;
+  height: 28px;
+}
+.page-sheet.count-7 .model-word {
+  font-size: 20px;
+}
+.page-sheet.count-7 .ex-item {
+  height: 22px;
+}
+.page-sheet.count-7 .ex-avatar {
+  width: 22px;
+  height: 22px;
+}
+.page-sheet.count-7 .scramble-word {
+  font-size: 16px;
+}
+
 /* PRINT STYLING */
 @media print {
   header.app-header, aside.controls-panel {
