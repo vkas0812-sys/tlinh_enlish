@@ -28,7 +28,7 @@
 
 | | 🇻🇳 Tiếng Việt | 🇬🇧 English |
 |---|---|---|
-| 📖 | **Vở 10 trang** theo chủ đề: Animals, Numbers 1–20, Colours, Toys & Things, Clothes & Home | **10-page workbook** by topic: Animals, Numbers 1–20, Colours, Toys & Things, Clothes & Home |
+| 📖 | **Vở 13 trang** theo chủ đề: Animals, Numbers 1–20, Colours, Toys, Clothes, Wild Animals, Adjectives | **13-page workbook** by topic: Animals, Numbers 1–20, Colours, Toys, Clothes, Wild Animals, Adjectives |
 | 📝 | **Viết câu** – luyện viết câu hoàn chỉnh | **Sentences** – practise full sentences |
 | 🔤 | **Bảng chữ cái** A–Z | **Alphabet** sheets A–Z |
 | ✏️ | **Soạn thảo tự do** – tự nhập từ muốn tập | **Free editor** – type any words to practise |
@@ -48,7 +48,7 @@
 3. 🎛️ **Chỉnh phông, dòng kẻ, màu** · Adjust font, lines and colours
 4. 🖨️ **Bấm "In / Xuất PDF (A4)"** · Click "Print / Export PDF (A4)"
 
-> 💡 **Mẹo · Tip:** chọn *"Toàn bộ 10 trang"* để in trọn bộ một lần · choose *"All 10 pages"* to print the whole set at once.
+> 💡 **Mẹo · Tip:** chọn *"Toàn bộ 13 trang"* để in trọn bộ một lần · choose *"All 13 pages"* to print the whole set at once.
 
 ---
 
