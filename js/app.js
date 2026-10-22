@@ -83,7 +83,11 @@ function renderHwSvg(text, isTrace = true, isEmpty = false) {
 
   if (text && !isEmpty) {
     const fill = isTrace ? th.trace : '#0F172A';
-    textMarkup = `<text x="12" y="26" class="font-trace" style="font-family: '${state.font}', sans-serif; font-size: ${state.fontSize}px; fill: ${fill};">${text}</text>`;
+    let fSize = state.fontSize;
+    if (text.length > 12) {
+      fSize = Math.round(state.fontSize * 0.72);
+    }
+    textMarkup = `<text x="12" y="26" class="font-trace" style="font-family: '${state.font}', sans-serif; font-size: ${fSize}px; fill: ${fill};">${text}</text>`;
   }
 
   return `

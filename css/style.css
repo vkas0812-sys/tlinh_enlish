@@ -743,6 +743,72 @@ section.preview-panel {
   font-size: 16px;
 }
 
+/* DENSE WORKSHEET FOR 10 ITEMS */
+.l-ar.space {
+  display: inline-block;
+  width: 6px;
+}
+
+.page-sheet.count-10 .trace-row {
+  height: 12.5mm;
+  grid-template-columns: minmax(185px, max-content) 1fr;
+  gap: 8px;
+}
+.page-sheet.count-10 .hw-line {
+  height: 5.8mm;
+}
+.page-sheet.count-10 .animal-avatar {
+  width: 22px;
+  height: 22px;
+}
+.page-sheet.count-10 .arrow {
+  font-size: 13px;
+}
+.page-sheet.count-10 .model-word {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.page-sheet.count-10 .font-trace {
+  font-size: 26px;
+}
+.page-sheet.count-10 .bottom-exercises {
+  gap: 10px;
+  margin-top: 2px;
+}
+.page-sheet.count-10 .ex-col {
+  padding: 4px 10px;
+}
+.page-sheet.count-10 .ex-col-title {
+  font-size: 13px;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+.page-sheet.count-10 .ex-list {
+  gap: 1px;
+}
+.page-sheet.count-10 .ex-item {
+  height: 18px;
+  gap: 6px;
+}
+.page-sheet.count-10 .ex-avatar {
+  width: 17px;
+  height: 17px;
+}
+.page-sheet.count-10 .scramble-word {
+  font-size: 12.5px;
+  min-width: 65px;
+  letter-spacing: 0.5px;
+}
+.page-sheet.count-10 .missing-letters {
+  font-size: 12.5px;
+}
+.page-sheet.count-10 .footer-section {
+  margin-top: -10px;
+}
+.page-sheet.count-10 .bottom-garden-container {
+  height: 32px;
+}
+
 /* PRINT STYLING */
 @media print {
   header.app-header, aside.controls-panel {
